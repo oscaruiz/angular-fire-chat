@@ -24,7 +24,8 @@ I updated some of the libraries to be compatible with the latest versions of Ang
 
 ## NOTES
 
-You can see here that the project is finished and working locally:
+The project is finished and working locally.
+There is a version deployed on firebase that can be tested --> [here.](https://angular-chat-2fed4.web.app/)
 
 ![image](https://user-images.githubusercontent.com/8970177/186748374-938370db-d5ff-404b-885c-4c7e355d4534.png)
 
