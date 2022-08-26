@@ -1,0 +1,19 @@
+<hr>
+<div class="apps-mensajes" id="app-mensajes">
+    <div  *ngFor="let chat of chatservice.chats"
+    [ngClass]="{'text-end':chatservice.chatUser.uid == chat.uid}">
+    <span class="card header"
+    [ngClass]="{'badge-primary':chatservice.chatUser.uid == chat, 
+                'badge-success':chatservice.chatUser.uid != chat}">
+        {{chat.name}}</span>
+            <p>
+             {{chat.message}}
+            </p>
+    </div>
+</div>
+<input type="file" (change)="uploadImage($event)">
+<input type="text" name="message" 
+[(ngModel)]="message"
+(keyup.enter)="sendMessage()" 
+placeholder="Send Message"
+class="form-control">
